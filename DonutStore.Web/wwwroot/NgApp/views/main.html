@@ -1,0 +1,26 @@
+﻿<center>
+	<h1>Donuts Page</h1>
+
+	<form novalidate ng-submit="controller.addDonut()">
+		<label for="title">Flavor</label>
+		<input id="title" ng-model="controller.donut.flavor" type="text" required />
+		<br />
+
+		<label for="price">Price</label>
+		<input id="price" ng-model="controller.donut.price" type="text" required />
+		<br />
+
+		<label for="imageUrl">ImageUrl</label>
+		<input id="imageUrl" ng-model="controller.donut.imageUrl" type="text" required />
+		<br />
+
+		<input type="submit" value="SAVE" />
+	</form>
+
+	<div>
+		<ul style="list-style: none;">
+			<li ng-repeat="donut in controller.donuts"><img ng-src="{{donut.imageUrl}}" style="width: 400px" /> {{donut.flavor}} {{donut.price}}</li>
+		</ul>
+	</div>
+
+</center>
