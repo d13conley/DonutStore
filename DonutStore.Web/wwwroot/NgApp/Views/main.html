@@ -1,0 +1,12 @@
+﻿<h1>Main View</h1>
+
+<div>
+    <button ng-click="controller.getDonuts()">Get Donuts!</button>
+</div>
+<br>
+
+<div>
+    <ul>
+        <li ng-repeat="donut in controller.donuts">{{donut.flavor}}{{donut.price}}{{donut.imageurl}}</li>
+    </ul>
+</div>
