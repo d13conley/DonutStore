@@ -637,6 +637,7 @@
     <TypeScriptCompile Include="wwwroot\node_modules\angular-ui-router\lib\templateFactory.d.ts" />
     <TypeScriptCompile Include="wwwroot\node_modules\angular-ui-router\lib\urlRouterProvider.d.ts" />
     <TypeScriptCompile Include="wwwroot\node_modules\angular-ui-router\lib\viewScroll.d.ts" />
+    <ProjectReference Include="..\DonutStore.Data\DonutStore.Data.csproj" />
   </ItemGroup>
 
 </Project>
